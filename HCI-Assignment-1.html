@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>EPark - Assignment 1</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header"  style="background-color: white; color: #040c38">
+		<a href="index.html" class="title" style="color: #040c38">Elle Park</a>
+		<nav>
+			<ul>
+				<li><a href="HCI-Assignment-1.html" class="active" style="color: #040c38">Assignment</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper" style="background-color: white; color: #040c38">
+			<div class="inner">
+				<h1 class="major" style="color: #261c3e">Assignment 1 - Redesigning Artnet</h1>
+
+				<h3 style="color: #040c38">What is Artnet?</h3>
+				<div class="indented-text">
+					<p>
+						Artnet is an art market website which operates an international research and trading platform for fine arts, decorative arts, and design.
+						Its core service lies in the self-operated online auction market and online gallery network. The gallery network is unique in its kind that
+						it connects the demand and supply around the globe, representing over 35,000 artists and 2,200 galleries.
+					</p>
+					<span class="image fit"><img src="assets/css/images/artnet-home.png" alt="" style="width: 80%; height: 400px; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						Six primary features on the website are auction, artists, galleries, auction houses, events, and news.
+						For this project, I focused on the galleries feature, which affects the way viewers obtain information about not only where the art is, but also
+						how to purchase it, who made it, and what works are available. Improving this feature would increase positive interaction on the platform
+						and increased traffic from its core users. Additionaly, an easier way to navigate the website could also attract new users with developing interest in the arts.
+					</p>
+				</div>
+
+				<h3 style="color: #040c38">Contextual Inquiry</h3>
+				<div class="indented-text">
+					<p>Contextual inquiry is a method for gathering information about the user.
+						It is a key step to understand the user's needs from their perspective for the design process.
+						This can also reveal hidden aspects of work that might be implicit in the user's understanding and reveal a need for change in the product design.
+						For this case study, one user was observed navigating Artnet to perform three different tasks.
+					</p>
+				</div>
+				<div class="indented-text">
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<p>
+								This user has never used Artnet before, which provided a fresh set of eyes to see both negative and positive features that went unnoticed.
+								He is interested in art and enjoys going to museums during travel. Although the core demographics of Artnet are collectors, curators,
+								and art historians, this website could be useful for casual museum-goers like Mathias with some adjustments.
+								I interviewed this user at his home (remotely through Zoom) as if he was searching for an exhibition to go to on a weekend.
+							</p>
+						</div>
+						<div class="col-6 col-12-medium">
+							<p>
+								<span class="image left"><img src="assets/css/images/CI-user.jpg" alt="" /></span>
+								<h4>User Profile -- </h4>
+								<b>Name: </b> Mathias I. <br>
+								<b>Occupation: </b> Junior at JHU <br>
+								<b>Location: </b> Bay Area <br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<h4>Task 1: Explore the “Galleries” page</h4>
+				<div class="indented-text">
+					<p>
+						The user was asked to go to the Galleries tab and get familiar with the layout and the content of the page.
+						Since one of the most important features on Artnet is partnership with galleries and the events they host, the Gallery page should be clear to navigate and
+						find information, like where galleries are, which artists they host, and what events are available or they have held in the past.
+					</p>
+					<span class="image fit"><img src="assets/css/images/CI-task1.gif" alt="" style="width: 70%; height: 400px; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						<em> Issue 1 </em> <br>It was difficult to know in which city or country the “Featured Galleries” are in compared to other galleries that were featured by location.
+						This required clicking on a gallery to be redirected to a new page and it is an inconvenient step that would require the user to go back a page if
+						he wants to look for other galleries.
+						<br>
+						<em> Issue 2 </em> <br>There is a lack of navigation scroll on the bottom for “Galleries in [City]”, compared to “Featured Galleries” that has a side and bottom scroll.
+						Although this isn’t a huge issue or inconvenience, the user noted that it would be more helpful to have both options for the ease of navigation.
+
+					</p>
+				</div>
+
+				<h4>Task 2: Find open events in the user’s area</h4>
+				<div class="indented-text">
+					<p>
+						The user was asked to find a page to view all open exhibitions in the user’s area. Under the “Events” page, artnet has a feature to sort events by type of event,
+						dates, and location. Location is available for 13 most prominent art cities around the world, such as New York, Paris, and Hong Kong.
+						The user was notified of this limited area service and was asked to search for San Francisco, which is the closest featured city to his area.
+					</p>
+					<span class="image fit"><img src="assets/css/images/CI-task2.gif" alt="" style="width: 70%; height: 400px; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						<em> Issue </em> <br>The first impulse for the user was to use the search bar and look up “San Francisco”. The search results were unclear, with irrelevant
+						gallery locations like Madrid and Barcelona coming up as the first two results. Although results were sorted for types of data,
+						such as “Artworks”, “Artists”, “Events”, and more, when the user clicked on “Events”, it was unclear that all the results actually took place in San Francisco.
+						Furthermore, it was showing all relevant events related to San Francisco, not just the currently open ones the user could visit.
+					</p>
+				</div>
+
+				<h4>Task 3: Find a list of galleries that have the user’s favorite artist</h4>
+				<div class="indented-text">
+					<p>
+						The user was asked to find a list of galleries that currently hold any works by the user’s favorite artist.
+						For the purpose of the task, it did not matter whether it was for the purpose of selling or display. Having a well-organized artist page is important,
+						because the value and popularity of an art work depends heavily on who the artist is.
+					</p>
+					<span class="image fit"><img src="assets/css/images/CI-task3.gif" alt="" style="width: 70%; height: 400px; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						<em> Issue </em> <br>When the user arrived on the artist’s page, the leftmost panel had a dropdown option to sort the works based on availability,
+						object type, and period. The user had a difficulty going to the Events tab on the top to view exhibitions. A feedback from the user was that
+						having an option to see works on display from the landing page of the artist along with availability for purchase would be more intuitive than to
+						move to a new tab for events, where currently ongoing exhibitions were displayed along with ones no longer on display.
+					</p>
+				</div>
+
+				<h3 style="color: #040c38">Sequential Model</h3>
+				<span class="image fit"><img src="assets/css/images/SM-1.png" alt="" style="width: 70%; height: 70%; margin-left: auto; margin-right: auto;"/></span>
+				<span class="image fit"><img src="assets/css/images/SM-2.png" alt="" style="width: 90%; height: 90%; margin-left: auto; margin-right: auto;"/></span>
+				<span class="image fit"><img src="assets/css/images/SM-3.png" alt="" style="width: 70%; height: 70%; margin-left: auto; margin-right: auto;"/></span>
+
+				<h3 style="color: #040c38">Paper-based Prototype</h3>
+				<div style="text-align:center; margin-top: 50px; margin-bottom: 50px;">
+					<iframe width="1000" height="600" src="https://www.youtube.com/embed/BfZRnKhnhxg"></iframe>
+				</div>
+				<h3 style="color: #040c38">Paper-based Evaluation</h3>
+				<h4>Task 1: Explore the “Galleries” page</h4>
+				<div class="indented-text">
+
+					<i> Improvement </i>
+					<ul>
+						<li>Finding information about where the featured gallery is</li>
+						<li>Bottom scroll for cities for added option to view other images</li>
+						<li>Pop up feature to view overview information about a gallery to quickly view information</li>
+					</ul>
+
+					<em> Issue </em>
+					<ul>
+						<li>The press release portion is too long and hard to read. This section should be removed or shortened with bigger text.</li>
+						<li>For the preview of images, there could be less pictures but bigger images and texts.</li>
+						</ul>
+					</div>
+
+					<h4>Task 2: Find open events in the user’s area</h4>
+					<div class="indented-text">
+						<i> Improvement </i>
+						<ul>
+							<li>Clarify event type user is looking for under events page (exhibition, auction, art fair, etc.) under Events page</li>
+							<li>Add advanced search option for the search bar that can detail the query</li>
+							<li>Allow user to filter from advanced search result, increasing accuracy for what the user is looking for</li>
+						</ul>
+
+						<em> Issue </em>
+						<ul>
+							<li>None!</li>
+							</ul>
+						</div>
+
+						<h4>Task 3: Find a list of galleries that have the user’s favorite artist</h4>
+						<div class="indented-text">
+							<i> Improvement </i>
+							<ul>
+								<li>Add "On-View" as an availability on the left hand side menu</li>
+								<li>Replace the long biography that makes the website look more cluttered with a gallery bar to view the artist's most notable works</li>
+								<li>Pop up feature to view overview information about the artist's work without going into the image page</li>
+							</ul>
+
+							<em> Issue </em>
+							<ul>
+								<li>The pop up feature should also indicate where the work is, if it is publicly owned or on a public listing</li>
+								<li>Having two tabs that says "Event" on the top menu is confusing. Should either name them differently or make it more clear to the user that
+								one event leads to the general event page and the other is just for the events concerning the artist's page</li>
+								</ul>
+						</div>
+
+						<h3 style="color: #040c38">Summary</h3>
+						<div class="indented-text">
+							<p>
+							I had a lot of fun evaluating Artnet. It's a website I often visit when I'm researching for a paper or I'm interested in lesser-known events hosted at
+							smaller galleries. The user I interviewed for Contextual Inquiry noted that the general aesthetics of the website is well established, with distinct
+							color scheme and overall minimal design. However, there are some features that can be improved and clarified for first-time users, as shown by the
+							paper-based prototype I created. Overall, the user who evaulated the prototype noted that having pop up descriptions for images is a nice way to increase user
+							interaction with the website that can allow easier time for users to check out artists, works, or events that they are scrolling past.
+						</p>
+						</div>
+					</div>
+
+
+				</section>
+
+			</div>
+		</div>
+
+			<!-- Footer -->
+			<!--
+			<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+			<ul class="menu">
+			<li>&copy; Elle Park. 2020.</li></li>
+		</ul>
+	</div>
+</footer>
+-->
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

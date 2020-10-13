@@ -1,0 +1,35 @@
+div.indented-text {
+  margin-left: 50px;
+}
+
+div.inner h3 {
+  border-bottom: 1px dotted #312450;
+  text-decoration: none;
+  color: #312450;
+}
+
+div.inner h4 {
+  color: #441f9c;
+}
+
+div.inner em {
+  color: red;
+  background-color: #ffffa8;
+  margin-left: 0px;
+}
+
+div.inner i {
+  color: green;
+}
+
+div.inner b {
+  color:inherit;
+}
+
+div.inner li {
+  margin-left: 5px;
+}
+
+div.inner ul {
+  margin-bottom: 5px;
+}
