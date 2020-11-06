@@ -107,7 +107,7 @@ pieSeries.slices.template.events.on("hit", function(ev) {
     on_hr = ev.target.dataItem.dataContext.online
     info.innerHTML = "<h3> Calculating Screen Time by Daily Breakdown </h3> <br>";
     if (sched) {
-      info.innerHTML += "<h4>" + "Schedule: " + sched + "<br>" + "Average hours spent: " + hr + "<br>"
+      info.innerHTML += "<h4>" + "Schedule: " + sched + "<br>" + "Average hours spent: " + hr + " hours<br>"
                         + "Time spent online or looking at a screen: " + on_hr + " hours </h4> <br>";
       info.innerHTML += des;
     }
